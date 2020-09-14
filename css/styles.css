@@ -1,0 +1,361 @@
+/* background #FFFFFF */
+/* accent #2196f3 */
+/* background footer #2F303A */
+/* title #212121 */
+/* text #757575 */
+/* outline: 2px solid tomato; */
+:root {
+  --accent-colour: #2196f3;
+  --title-colour: #212121;
+  --text-colour: #757575;
+  --primary-white-colour: #ffffff;
+  --footer-bg-colour: #2f303a;
+}
+
+body {
+  background-color: var(--primary-white-colour);
+  color: var(--text-colour);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.container {
+  width: 1200px;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 0px;
+}
+
+/* logo */
+.logo {
+  color: var(--accent-colour);
+  font-family: Raleway, serif;
+  font-size: 26px;
+  line-height: 1.19;
+  font-weight: 700;
+  text-decoration: none;
+
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  justify-items: flex-start;
+}
+
+.logo-span {
+  color: var(--title-colour);
+  font-family: Raleway, serif;
+  font-size: 26px;
+  line-height: 1.19;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+/* site nav */
+.site-nav .link,
+.auth-nav .link {
+  color: var(--title-colour);
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+
+  display: block;
+
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.site-nav {
+  display: flex;
+  justify-items: flex-start;
+  margin-left: 93px;
+}
+
+.auth-nav {
+  display: flex;
+  justify-items: flex-end;
+  margin-left: auto;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.auth-nav .item + .item {
+  margin-left: 47px;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-colour);
+}
+
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: var(--accent-colour);
+}
+
+.site-nav .link.current {
+  color: var(--accent-colour);
+}
+
+/* Hero */
+
+.hero-title {
+  color: var(--primary-white-colour);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.hero-container {
+  background-color: rgba(47, 48, 58, 0.1);
+  background-image: linear-gradient(
+      to left,
+      rgba(47, 48, 58, 0.1),
+      rgba(47, 48, 58, 0.1)
+    ),
+    url(../images/фон.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Section */
+
+.section-title {
+  color: var(--title-colour);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+
+  margin-bottom: 50px;
+  margin-top: 0px;
+}
+.section {
+  margin-bottom: 94px;
+}
+.transparent-title {
+  color: transparent;
+  margin-top: 0px;
+}
+
+.advantages .title {
+  color: var(--title-colour);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.advantages {
+  display: flex;
+}
+
+.advantages .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.advantages .item {
+  width: 270px;
+}
+
+.title {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.advantages .text,
+.footer .text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.tasks {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0;
+}
+
+.team {
+  background-color: #f5f4fa;
+}
+.team .section-title {
+  padding-top: 94px;
+}
+.team .team-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.team p {
+  text-align: center;
+}
+.employees {
+  display: flex;
+}
+.employees .item {
+  width: calc((100% - 30px * 3) / 4);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.post {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+/* Футер */
+.footer {
+  background-color: var(--footer-bg-colour);
+  color: var(--primary-white-colour);
+}
+.footer .logo {
+  padding-top: 60px;
+  padding-bottom: 0px;
+  justify-items: flex-start;
+}
+
+.logo-span-footer {
+  color: var(--primary-white-colour);
+  font-family: Raleway, serif;
+  font-size: 26px;
+  line-height: 1.19;
+  font-weight: 700;
+  text-decoration: none;
+}
+.footer .link {
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.adress {
+  margin-top: 20px;
+  padding-bottom: 60px;
+}
+
+/* Button */
+.button {
+  color: var(--primary-white-colour);
+  background-color: var(--accent-colour);
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 10px 32px;
+  text-align: center;
+  border: 1px solid transparent;
+  display: inline-block;
+  min-width: 200px;
+}
+
+.portfolio-nav .button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  padding: 6px 22px;
+  background-color: #f5f4fa;
+  color: var(--title-colour);
+  margin-right: 8px;
+  display: inline;
+}
+
+.portfolio .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  color: var(--title-colour);
+  padding: 20px 24px 4px;
+}
+
+.portfolio .text {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--text-colour);
+  padding: 0px 24px 20px;
+}
+
+.portfolio .link {
+  text-decoration: none;
+  background-color: black;
+}
+.portfolio-nav .button:hover,
+.portfolio-nav .button:focus {
+  color: var(--primary-white-colour);
+  background-color: var(--accent-colour);
+}
+.container .portfolio-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: chartreuse; */
+  font-size: 0;
+  margin-bottom: 94px;
+}
+
+.portfolio .item,
+.tasks .item {
+  width: calc((100% - 30px * 2) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.portfolio .item:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.tasks .item:nth-child(3n) {
+  margin-right: 0px;
+}
+.portfolio .item:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
