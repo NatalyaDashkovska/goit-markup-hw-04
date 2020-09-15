@@ -114,6 +114,10 @@ body {
   color: var(--accent-colour);
 }
 
+/* .hero {
+  margin-bottom: 200px;
+} */
+
 /* Hero */
 
 .hero-title {
@@ -127,6 +131,7 @@ body {
 
   margin-top: 0px;
   margin-bottom: 30px;
+  padding-top: 200px;
 }
 
 .hero-container {
@@ -188,6 +193,24 @@ body {
   width: 270px;
 }
 
+.advantages .item::before {
+  content: "";
+  display: block;
+  height: 120px;
+  outline: 2px solid tomato;
+  /* background-image: url(../images/antenna\ 1.png); */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: #f5f4fa;
+}
+
+.icon-clock::before {
+  background-image: url(../images/clock\ 1.png);
+}
+.icon-antenna::before {
+  background-image: url(../images/antenna\ 1.png);
+}
 .title {
   margin-top: 0px;
   margin-bottom: 10px;
