@@ -59,7 +59,6 @@ body {
   margin: 0;
 }
 
-
 .main-nav {
   display: flex;
   align-items: center;
@@ -81,6 +80,24 @@ body {
   padding-bottom: 16px;
 }
 
+.link-icon {
+  fill: var(--text-colour);
+  margin-right: 10px;
+}
+
+.auth-nav .link:hover .link-icon {
+  fill: var(--accent-colour);
+}
+
+.envelope {
+  height: 12px;
+  width: 16px;
+}
+.smartphone {
+  height: 16px;
+  width: 10px;
+}
+
 .site-nav {
   display: flex;
   justify-items: flex-start;
@@ -91,6 +108,8 @@ body {
   display: flex;
   justify-items: flex-end;
   margin-left: auto;
+
+  align-items: center;
 }
 
 .site-nav .item:not(:last-child) {
@@ -408,40 +427,16 @@ body {
   margin-bottom: 0px;
 }
 
-/* .facebook::before {
-  background-image: url(../images/facebook\ 1.svg);
-  content: "";
-  display: block;
-  height: 120px;
-  outline: 2px solid tomato;
-  /* background-image: url(../images/antenna\ 1.png); */
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  background-color: #f5f4fa; */
-}
-
-/* .auth-nav .icon {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  margin-left: 10px;
-  background-size: contain;
-  outline: 2px solid tomato;
-  background-image: url(../images/envelope.png);
-} */
-
 .social-icon-list {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   list-style: none;
 }
 
-
 .social-icon {
   width: 20px;
-    height: 20px;
-    fill: #afb1b8;
+  height: 20px;
+  fill: #afb1b8;
 }
 
 .social-icon-link:hover .social-icon {
@@ -450,23 +445,21 @@ body {
 
 .social-icon-link:hover {
   background-color: var(--accent-colour);
-  }
+}
 
 .social-icon-link {
   /* outline: 2px solid tomato; */
   display: flex;
-justify-content: center;
-align-items: center;
-width: 44px;
-height: 44px;
-/* background-color: var(--title-colour); */
-border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  /* background-color: var(--title-colour); */
+  border-radius: 50%;
 }
-
-
 
 .social-icon-list {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   list-style: none;
 }
