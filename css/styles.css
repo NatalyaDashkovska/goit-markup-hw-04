@@ -305,17 +305,15 @@ body {
   color: var(--primary-white-colour);
   display: flex;
   align-items: center;
-  outline: 2px solid tomato;
 }
 .footer .logo {
-  padding-top: 60px;
-  padding-bottom: 0px;
+  padding-bottom: 20px;
   justify-items: flex-start;
-  outline: 2px solid tomato;
+
+  padding-top: 0px;
 }
 .footer .container {
   display: flex;
-  padding-top: 94px;
 }
 
 .logo-span-footer {
@@ -331,42 +329,41 @@ body {
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-  outline: 2px solid tomato;
+
+  margin-top: 9px;
 }
 
 .adress {
-  margin-top: 20px;
   padding-bottom: 60px;
   width: 231px;
   margin-right: 70px;
-  outline: 2px solid tomato;
+
+  margin-top: 60px;
 }
 
 .header {
   outline: 1px solid #ececec;
-  outline: 2px solid tomato;
 }
 
-.footer-join-ruler {
-  outline: 2px solid tomato;
+.footer-invite {
   width: 206px;
   height: 80px;
+  margin-top: 60px;
 }
-.footer-flex {
+.footer-icon-list {
   display: flex;
   list-style: none;
   padding: 0px;
   margin: 0px;
   justify-content: start;
-  outline: 2px solid tomato;
 }
-.footer-social-icon-list {
+
+.footer-social-icon {
   margin-right: 10px;
   width: 44px;
   height: 44px;
-  outline: 2px solid tomato;
 }
-.footer-join-title {
+.footer-invite-title {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -375,8 +372,8 @@ body {
   text-transform: uppercase;
   margin-bottom: 20px;
   color: var(--primary-white-colour);
-  outline: 2px solid tomato;
-  margin-bottom: 0px;
+
+  margin-bottom: 20px;
 }
 .footer-social-link {
   display: flex;
@@ -386,6 +383,10 @@ body {
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+}
+
+.footer-social-link:hover {
+  background-color: var(--accent-colour);
 }
 
 /* Button */
