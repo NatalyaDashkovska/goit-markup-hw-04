@@ -303,11 +303,19 @@ body {
 .footer {
   background-color: var(--footer-bg-colour);
   color: var(--primary-white-colour);
+  display: flex;
+  align-items: center;
+  outline: 2px solid tomato;
 }
 .footer .logo {
   padding-top: 60px;
   padding-bottom: 0px;
   justify-items: flex-start;
+  outline: 2px solid tomato;
+}
+.footer .container {
+  display: flex;
+  padding-top: 94px;
 }
 
 .logo-span-footer {
@@ -323,14 +331,61 @@ body {
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+  outline: 2px solid tomato;
 }
 
 .adress {
   margin-top: 20px;
   padding-bottom: 60px;
+  width: 231px;
+  margin-right: 70px;
+  outline: 2px solid tomato;
 }
+
 .header {
   outline: 1px solid #ececec;
+  outline: 2px solid tomato;
+}
+
+.footer-join-ruler {
+  outline: 2px solid tomato;
+  width: 206px;
+  height: 80px;
+}
+.footer-flex {
+  display: flex;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  justify-content: start;
+  outline: 2px solid tomato;
+}
+.footer-social-icon-list {
+  margin-right: 10px;
+  width: 44px;
+  height: 44px;
+  outline: 2px solid tomato;
+}
+.footer-join-title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: var(--primary-white-colour);
+  outline: 2px solid tomato;
+  margin-bottom: 0px;
+}
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
 }
 
 /* Button */
@@ -538,4 +593,8 @@ body {
 .permanent-clients-li:hover {
   background-color: #ffffff;
   border: 1px solid var(--accent-colour);
+}
+
+.footer-social-item {
+  fill: var(--primary-white-colour);
 }
