@@ -150,6 +150,8 @@ body {
 /* Hero */
 
 .hero-title {
+  font-family: Roboto;
+  font-style: normal;
   color: var(--primary-white-colour);
   font-weight: 900;
   font-size: 44px;
@@ -167,8 +169,8 @@ body {
   background-color: rgba(47, 48, 58, 0.1);
   background-image: linear-gradient(
       to left,
-      rgba(47, 48, 58, 0.1),
-      rgba(47, 48, 58, 0.1)
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
     ),
     url(../images/фон.jpg);
 
@@ -195,7 +197,7 @@ body {
   margin-top: 0px;
 }
 .section {
-  /* margin-bottom: 94px; */
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 .transparent-title {
@@ -264,18 +266,20 @@ body {
   flex-wrap: wrap;
   font-size: 0;
 }
+.task {
+  padding-top: 0px;
+}
 
 .team {
   background-color: #f5f4fa;
 }
-.team .section-title {
-  padding-top: 94px;
-}
+
 .team .team-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  color: var(--title-colour);
 }
 .team p {
   text-align: center;
@@ -290,6 +294,7 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  background-color: var(--primary-white-colour);
 }
 
 .post {
@@ -458,7 +463,7 @@ body {
 
   margin-left: auto;
   margin-right: auto;
-  padding-top: 94px;
+
   padding-bottom: 50px;
 }
 .portfolio {
@@ -466,7 +471,7 @@ body {
   flex-wrap: wrap;
   /* background-color: chartreuse; */
   font-size: 0;
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
 }
 
 .portfolio .item,
@@ -531,7 +536,7 @@ body {
   padding-bottom: 94px;
 }
 
-.team-title {
+.clients-title {
   margin-bottom: 50px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
